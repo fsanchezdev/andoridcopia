@@ -26,29 +26,19 @@
       "automerge": false,
       "platformAutomerge": false,
       "matchPackagePatterns": [
-        "^com.android.tools.build",
-        "^com.android.application",
-        "^com.android.library"
+        "^androidx\\.compose\\.",
+        "^org\\.jetbrains\\.compose\\."
       ],
-      "groupName": "android-gradle-plugin",
-      "commitMessagePrefix": "AGP",
-      "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}"
-    },
-    {
-      "automerge": false,
-      "platformAutomerge": false,
-      "matchPackagePatterns" : [
-        "^org.jetbrains.kotlin",
-        "^com.google.devtools.ksp",
-        "^androidx.compose.compiler"
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
       ],
-      "groupName" : "kotlin related dependencies"
-    },
-    {
-      "automerge": false,
-      "platformAutomerge": false,
-      "matchManagers": ["github-actions"],
-      "groupName": "github-actions-workflows"
+      "enabled": true,
+      "groupName": "compose dependencies",
+      "prBodyNotes": ["Update Compose dependencies"],
+      "branchPrefix": "renovate/compose-",
+      "labels": ["compose-update"]
     }
   ],
   "assignees": ["fsanchezdev"],
