@@ -1,8 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices"
-  ],
   "baseBranches": [
     "main"
   ],
@@ -11,17 +8,6 @@
   ],
   "automergeStrategy": "merge-commit",
   "packageRules": [
-    {
-      "automerge": false,
-      "platformAutomerge": false,
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "groupName": "dependencies-minor-patch-digest"
-    },
     {
       "automerge": false,
       "platformAutomerge": false,
