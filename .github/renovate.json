@@ -25,10 +25,6 @@
     {
       "automerge": false,
       "platformAutomerge": false,
-      "matchPackagePatterns": [
-        "^androidx\\.compose\\.",
-        "^org\\.jetbrains\\.compose\\."
-      ],
       "matchUpdateTypes": [
         "major",
         "minor",
@@ -36,12 +32,22 @@
       ],
       "enabled": true,
       "groupName": "compose dependencies",
-      "prBodyNotes": ["Update Compose dependencies"],
+      "prBodyNotes": [
+        "Update Compose dependencies"
+      ],
       "branchPrefix": "renovate/compose-",
-      "labels": ["compose-update"]
+      "labels": [
+        "compose-update"
+      ],
+      "matchPackageNames": [
+        "/^androidx\\.compose\\./",
+        "/^org\\.jetbrains\\.compose\\./"
+      ]
     }
   ],
-  "assignees": ["fsanchezdev"],
+  "assignees": [
+    "fsanchezdev"
+  ],
   "semanticCommitScope": "{{parentDir}}",
   "separateMajorMinor": true
 }
