@@ -3,10 +3,14 @@
   "enabledManagers": ["gradle", "gradle-wrapper"],
   "packageRules": [
     {
+      "matchPackagePatterns": [".*"],
+      "enabled": false
+    },
+    {
       "matchPackageNames": [
         "androidx.activity:activity-compose"
       ],
-      "enabled":true
+      "enabled": true
     },
     {
       "automerge": false,
@@ -16,7 +20,7 @@
         "gradle-wrapper"
       ],
       "groupName": "Gradle Wrapper",
-      "enabled":true
+      "enabled": true
     }
   ]
 }
