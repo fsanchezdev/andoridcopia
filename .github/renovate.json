@@ -19,8 +19,7 @@
       "matchManagers": [
         "gradle-wrapper"
       ],
-      "groupName": "Gradle Wrapper",
-      "enabled": true
+      "groupName": "Gradle Wrapper"
     }
   ]
 }
