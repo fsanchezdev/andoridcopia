@@ -2,7 +2,9 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^androidx\\.compose\\.",
+      "matchPackagePatterns": [
+        "^androidx\\.activity:activity-compose$",
+        "^androidx\\.compose\\.",
         "^org\\.jetbrains\\.compose\\."],
       "enabled": true
     },
