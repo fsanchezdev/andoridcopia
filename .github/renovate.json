@@ -3,10 +3,6 @@
   "enabledManagers": ["gradle", "gradle-wrapper"],
   "packageRules": [
     {
-      "matchPackagePatterns": [".*"],
-      "enabled": false
-    },
-    {
       "matchPackageNames": [
         "androidx.activity:activity-compose"
       ],
