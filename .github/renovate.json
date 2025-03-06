@@ -3,16 +3,20 @@
   "enabledManagers": ["gradle", "gradle-wrapper"],
   "packageRules": [
     {
-      "matchDepNames": [
-        "^androidx\\.activity:activity-compose$",
-        "androidx.activity:activity-compose",
-        "org.jetbrains.compose.*"
+      "matchPackagePatterns": [".*"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "androidx.activity:activity-compose"
       ],
       "enabled": true
     },
     {
-      "matchPackagePatterns": [".*"],
-      "enabled": false
+      "matchPackagePatterns": [
+        "^org\\.jetbrains\\.compose"
+      ],
+      "enabled": true
     }
   ]
 }
