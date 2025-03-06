@@ -9,6 +9,10 @@
         "org.jetbrains.compose.*"
       ],
       "enabled": true
+    },
+    {
+      "matchPackagePatterns": [".*"],
+      "enabled": false
     }
   ]
 }
