@@ -7,6 +7,8 @@
     "before 4am on the first day of the month"
   ],
   "automergeStrategy": "merge-commit",
+  "enabledManagers": ["gradle"],
+  "ignoreDeps": [".*"],
   "packageRules": [
     {
       "automerge": false,
@@ -14,11 +16,6 @@
       "matchPackagePatterns": [
         "^androidx\\.compose\\.",
         "^org\\.jetbrains\\.compose\\."
-      ],
-      "matchUpdateTypes": [
-        "major",
-        "minor",
-        "patch"
       ],
       "enabled": true,
       "groupName": "compose dependencies",
