@@ -1,11 +1,13 @@
 {
   "extends": ["config:base"],
+  "enabledManagers": ["gradle", "gradle-wrapper"],
   "packageRules": [
     {
-      "matchPackagePatterns": [
+      "matchDepNames": [
         "^androidx\\.activity:activity-compose$",
-        "^androidx\\.compose\\.",
-        "^org\\.jetbrains\\.compose\\."],
+        "androidx.activity:activity-compose",
+        "org.jetbrains.compose.*"
+      ],
       "enabled": true
     },
     {
