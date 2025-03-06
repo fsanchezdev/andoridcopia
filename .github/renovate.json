@@ -7,16 +7,13 @@
       "enabled": false
     },
     {
-      "matchPackageNames": [
-        "androidx.activity:activity-compose"
+      "automerge": false,
+      "platformAutomerge": false,
+      "description": "Gradle Wrapper updates",
+      "matchManagers": [
+        "gradle-wrapper"
       ],
-      "enabled": true
-    },
-    {
-      "matchPackagePatterns": [
-        "^org\\.jetbrains\\.compose"
-      ],
-      "enabled": true
+      "groupName": "Gradle Wrapper"
     }
   ]
 }
